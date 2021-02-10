@@ -1,0 +1,57 @@
+h1 {
+    color: #d0e1f9;
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 span {
+    background-color: #283655;
+    border: none;
+    border-radius: 45px;
+    padding: 10px;
+}
+
+h2 {
+    color: #d0e1f9;
+    font-size: 15pt;
+    margin: 0 0 10px 0;
+    padding: 18px 0 18px 0;
+    text-align: center;
+}
+
+h2 span {
+    background-color: #283655;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.container {
+  display: table;
+  width: 100%;
+}
+
+.section {
+    background-color: #4d648d;
+    border-radius: 25px;
+    height: 175px;
+    margin-bottom: 15px;
+}
+
+.sectionLeft {
+    position: absolute;
+    height: 50%;
+    left: 0.5%;
+    width: 45%;
+}
+
+.sectionRight {
+    background-color: #4d648d;
+    border-radius: 25px;
+    height: auto;
+    min-height: 50%;
+    position: absolute;
+    right: 0.5%;
+    width: 53%;
+}

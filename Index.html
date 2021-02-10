@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pomodoro Technique</title>
+    <link href="./StyleSheets/styleCommon.css" rel="stylesheet" type="text/css" />
+    <link href="./StyleSheets/styleIndex.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="section">
+        <h1>
+            <span>
+                Tasks
+            </span>
+        </h1>
+        <ul id="myUL">
+        </ul>
+        <div class="container form-inline">
+            <input placeholder="New TO-DO item" type="text" id="myInput" name="myInput">
+            <button type="button" class="addButton" onclick="AddButton_Click()">+</button>
+        </div>
+        <br>
+        <div class="container containerGrid">
+            <button type="button" class="beginButton" onclick="LoadProgram()">Begin</button>
+        </div>
+    </div>
+    <script src="./Scripts/scriptCommon.js"></script>
+    <script src="./Scripts/scriptIndex.js"></script>
+</body>
+
+</html>
