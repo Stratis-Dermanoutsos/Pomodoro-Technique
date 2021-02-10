@@ -29,7 +29,7 @@ function AddButton_Click()
 /* Load the next page with our TODO list */
 function LoadProgram() {
     /* Save the list to load on the Program page */
-    let myList = GetList();
+    let myList = document.getElementById("myUL").getElementsByTagName('li');
     var lis = [];
     for (const li of myList) {
         lis.push(li.outerHTML);
@@ -37,10 +37,4 @@ function LoadProgram() {
     sessionStorage.setItem("myList", JSON.stringify(lis));
 
     window.location.href = "./Program.html"
-}
-
-function GetList() {
-    let content = document.getElementById("myUL").getElementsByTagName('li');
-    console.log(content)
-    return content;
 }
