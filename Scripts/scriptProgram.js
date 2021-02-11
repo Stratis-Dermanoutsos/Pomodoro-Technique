@@ -2,6 +2,7 @@ var currentPeriodInSeconds;
 var timesWork = 0;
 var isWorking;
 
+/* Run when the program starts */
 function SetStarted()
 {
     let now = new Date();
@@ -18,6 +19,7 @@ function SetStarted()
     window.StartWork();
 }
 
+/* Load our TODO list */
 function LoadList() {
     let myList = JSON.parse(sessionStorage.getItem("myList"));
     var myUl = document.getElementById("myUL");
@@ -37,6 +39,7 @@ function Timer_Tick() {
     }
 }
 
+/* Start the working period */
 function StartWork() {
     /* Set variables */
     currentPeriodInSeconds = 1500;
@@ -49,11 +52,12 @@ function StartWork() {
     PrintTime(); // Print
 }
 
+/* Start the break period */
 function StartBreak() {
     /* Set variables */
     if (timesWork / 4 >= 1 && timesWork % 4 == 0) {
         currentPeriodInSeconds = 900;
-        alert("Time for a quick break.");
+        alert("Time for a longer break.");
     } else {
         currentPeriodInSeconds = 300;
         alert("Time for a quick break.");
@@ -65,6 +69,7 @@ function StartBreak() {
     PrintTime(); // Print
 }
 
+/* Re-new the timer */
 function PrintTime() {
     let myDiv = parseInt(currentPeriodInSeconds / 60);
     let myMod = currentPeriodInSeconds % 60;
